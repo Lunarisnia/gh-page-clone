@@ -14,10 +14,12 @@ cd dist
 
 git init
 git add -A
+git config user.email "r.arswendo.r@gmail.com"
+git config user.name "Luna"
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
+git push -f git@github.com:lunarisnia/lunarisnia.github.io.git gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages

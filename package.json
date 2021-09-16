@@ -2,14 +2,17 @@
   "name": "lunarisnia.github.io",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://lunarisnia.github.io",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
   "main": "index.js",
   "dependencies": {
     "core-js": "^3.6.5",
+    "gh-pages": "^3.2.3",
     "vue": "^2.6.11",
     "vuetify": "^2.4.0"
   },
@@ -49,7 +52,6 @@
   "bugs": {
     "url": "https://github.com/Lunarisnia/lunarisnia.github.io/issues"
   },
-  "homepage": "https://github.com/Lunarisnia/lunarisnia.github.io#readme",
   "license": "MIT",
   "readme": "ERROR: No README data found!",
   "repository": {
