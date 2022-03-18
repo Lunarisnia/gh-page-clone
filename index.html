@@ -1,1 +1,50 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>lunarisnia.github.io</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"><link href="/css/chunk-vendors.4902529a.css" rel="preload" as="style"><link href="/js/app.d643beb3.js" rel="preload" as="script"><link href="/js/chunk-vendors.126c2414.js" rel="preload" as="script"><link href="/css/chunk-vendors.4902529a.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but lunarisnia.github.io doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.126c2414.js"></script><script src="/js/app.d643beb3.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hi Kamu Mau Ga Jadi Pacar Aku?</h1>
+    <img
+      src="https://www.gifcen.com/wp-content/uploads/2021/02/love-gif-2.gif"
+    />
+    <br />
+    <button id="yesButton" onclick="yes()">Mau!</button>
+    <button id="noButton" onclick="no()">Engga.</button>
+  </body>
+  <script>
+      let noTimePressed = 0;
+      function no() {
+        switch (noTimePressed) {
+            case 0:
+                alert("Oh oke sip.");
+                break;
+            case 1:
+                alert("Iya ngerti gw lu kaga mau.");
+                break;
+            case 2:
+                alert("Iya udah paham gw, bacod banget.");
+                break;
+            default:
+                alert("Pergi udah pergi.");
+                break;
+        }
+        noTimePressed++;
+      }
+
+      function yes() {
+          if(noTimePressed > 0) {
+            alert("Katanya tadi ga mau gmn sih?");
+            document.body.innerHTML = '';
+            const newImage = document.createElement("img");
+            newImage.src = "https://media1.giphy.com/media/44Eq3Ab5LPYn6/giphy.gif";
+            document.body.appendChild(newImage);
+            return;
+          }
+          alert('Tapi gw gamau ama elu gmn dong?');
+      }
+  </script>
+</html>
